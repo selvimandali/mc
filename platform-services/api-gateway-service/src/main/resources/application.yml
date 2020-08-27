@@ -1,0 +1,20 @@
+server:
+  port: ${PORT:7004}
+  
+spring:
+  application:
+    name: api-gateway-service
+  
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  #instance:
+    #instance-id: ${spring.application.name}:${random.value}
+zuul:
+  host:
+    connect-timeout-millis: 300000000
+    socket-timeout-millis: 300000000
+ribbon:
+  ReadTimeout:  300000000

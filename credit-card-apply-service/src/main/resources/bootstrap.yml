@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: credit-card-apply-service
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://localhost:7003/config
